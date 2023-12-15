@@ -24,6 +24,11 @@ export default defineConfig({
 			}
 		},
 	},
+	optimizeDeps: {
+		esbuildOptions: {
+			target: "es2022",
+		}
+	},
 	define: {
 		__APP_VERSION__: JSON.stringify(packageJson.version)
 	},
