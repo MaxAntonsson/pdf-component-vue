@@ -42,7 +42,7 @@
 	},
 	"module": "./dist/pdf-component-vue.es.js",
 	"dependencies": {
-		"pdfjs-dist": "^3.11.174",
+		"pdfjs-dist": "^4.0.269",
 		"vue3-treeview": "^0.4.1"
 	},
 	"peerDependencies": {
