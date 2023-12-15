@@ -23,8 +23,8 @@
 	</div>
 </template>
 <script>
-import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf.min.js";
-import { PDFLinkService } from "pdfjs-dist/web/pdf_viewer.js";
+import { GlobalWorkerOptions } from "pdfjs-dist/build/pdf.min";
+import { PDFLinkService } from "pdfjs-dist/web/pdf_viewer";
 import { normalizeClass } from "vue";
 import {
 	COLD, WARM, HOT,
@@ -40,7 +40,7 @@ import * as resize from "./ResizeConfiguration";
 import * as cmd from "./Commands";
 import "../pdf-component-vue.css";
 
-GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.min.js", import.meta.url);
+GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.min.mjs", import.meta.url);
 
 export default {
 	name: "PdfComponent",
